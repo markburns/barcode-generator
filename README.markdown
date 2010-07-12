@@ -4,11 +4,13 @@ Fork of http://github.com/anujluthra/barcode-generator/
 Changes to this version
 =======================
 
-Removed unused tests
-Removed tasks directory - if you add an initializer to the Rails project that calls BarcodeDependencyChecker.check_dependencies
+* Removed unused tests
+* Removed tasks directory - if you add an initializer to the Rails project that calls BarcodeDependencyChecker.check_dependencies
 then this will not allow the server to start unless the public/barcodes directory exists
-Added a dependency checker - this verifies that ImageMagick and GhostScript are installed and the barcode image path exists
-Now will raise an error if the PostScript to PNG conversion failed
+
+* Added a dependency checker - this verifies that ImageMagick and GhostScript are installed and the barcode image path exists
+
+* Now will raise an error if the PostScript to PNG conversion failed
 
 !(http://farm2.static.flickr.com/1378/1125817164_6f57adb24a_o.png "sample barcode image")
 
